@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t docker-whale .
+docker build -t accesto/docker-whale .

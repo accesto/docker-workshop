@@ -1,0 +1,8 @@
+www:
+  build: .
+  links:
+    - mongodb
+  ports:
+    - 8084:80
+mongodb:
+  image: mongo

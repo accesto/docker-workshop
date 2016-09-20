@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run docker-whale
+docker run accesto/docker-whale

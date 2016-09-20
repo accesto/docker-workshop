@@ -1,25 +1,6 @@
-version: '2'
-services:
-  www:
-    image: php:7.0-apache
-    volumes: 
-      - ./www:/var/www/html
-    links:
-      - redis
-  haproxy:
-    image: 'dockercloud/haproxy:latest'
-    links:
-      - www
-    environment:
-      - STATS_AUTH="admin:admin"
-      - STATS_PORT=1936
-      - DOCKER_TLS_VERIFY
-      - DOCKER_HOST
-      - DOCKER_CERT_PATH
-    volumes:
-      - $DOCKER_CERT_PATH:$DOCKER_CERT_PATH
-    ports:
-      - '80:80'
-      - '1936:1936'
-  redis:
-    image: redis
+www:
+  image: mkurzeja/docker-workshop:demo6
+  links:
+    - redis
+redis:
+  image: redis
