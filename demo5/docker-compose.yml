@@ -19,7 +19,7 @@ services:
     volumes:
       - $DOCKER_CERT_PATH:$DOCKER_CERT_PATH
     ports:
-      - '80:80'
+      - '8081:80'
       - '1936:1936'
   redis:
     image: redis
