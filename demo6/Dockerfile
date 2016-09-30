@@ -1,2 +1,2 @@
-FROM php:7.0-apache
-COPY ./www /var/www/html
+FROM webdevops/php-apache:alpine-3-php7
+COPY ./www /app

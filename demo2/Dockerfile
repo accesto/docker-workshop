@@ -1,3 +1,6 @@
-FROM docker/whalesay:latest
-RUN apt-get -y update && apt-get install -y fortunes
-CMD /usr/games/fortune -a | cowsay
+FROM firecyberice/whalesay:latest
+
+ADD fortune.sh /usr/bin/
+RUN chmod +x /usr/bin/fortune.sh
+
+ENTRYPOINT /usr/bin/fortune.sh | cowsay

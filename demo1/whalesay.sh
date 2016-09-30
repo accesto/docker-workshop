@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run docker/whalesay cowsay "PHP rocks"
+docker run firecyberice/whalesay "PHP rocks"

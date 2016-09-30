@@ -1,6 +1,6 @@
 www:
-   image: php:7.0-apache
+   image: webdevops/php-apache:alpine-3-php7
    volumes: 
-     - ./www:/var/www/html
+     - ./www:/app
    ports:
-     - 80:80
+     - 8082:80

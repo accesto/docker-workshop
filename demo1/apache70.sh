@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run --rm -t -i -v $PWD:/var/www/html -p 8082:80 php:7.0-apache 
+docker run --rm -t -i -v $PWD:/app -p 8082:80 webdevops/php-apache:alpine-3-php7
